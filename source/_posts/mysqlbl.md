@@ -1,0 +1,25 @@
+---
+title: MYSQL变量定义
+date: 2019-07-14 15:05:01
+tags: mysql
+categories: SQL
+---
+
+> 1. 定义变量赋值:
+
+    declare @i int default 0;
+
+    set @i=100;
+
+    select @i;
+
+将变量@i重命名为i
+
+    select @i i;
+
+> 2. 结果对象赋值:
+
+    select username into @j from wp_admin_user where id=3;
+
+    select @j;
+
