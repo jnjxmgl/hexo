@@ -67,12 +67,13 @@ $pi_key =  openssl_pkey_get_private($private_key); #判断私钥是否是可用�
 
 $pu_key = openssl_pkey_get_public($public_key); #判断公钥是否是可用的,可用返回资源id Resource id
 
-#使用公钥和私钥文件写法
+#使用公钥和私钥文件写法(可使用相对或者绝对路径)
 
 #$private_key = "private_key.pem";
 #$public_key = "rsa_public_key.pem";
 #$pi_key =  openssl_pkey_get_private(file_get_contents($private_key)); #判断私钥是否是可用的，可用返回资源id Resource id
 #$pu_key = openssl_pkey_get_public(file_get_contents($public_key)); #判断公钥是否是可用的,可用返回资源id Resource id
+
 
 #使用公钥和私钥文件写法结束
 
@@ -85,7 +86,7 @@ print_r($pu_key);
 echo "\n";
 
 
-$data = "测试而已"; //原始数据
+$data = "123"; //原始数据
 $encrypted = "";
 $decrypted = "";
 echo "---------------------------------------\n";
