@@ -1,5 +1,5 @@
 ---
-title: 在php使用curl进行post请求接口
+title: 在php使用curl进行get请求接口
 date: 2019-12-02 13:14:49
 tags:
 ---
