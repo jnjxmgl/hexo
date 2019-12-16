@@ -1,7 +1,8 @@
 ---
 title: 在php使用curl进行post请求接口
 date: 2019-12-02 13:12:27
-tags:
+tags: php
+categories: linux
 ---
 
 ```php
