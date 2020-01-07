@@ -26,7 +26,7 @@ categories: linux
             curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
         }
-        //设置post方式提交 
+        //设置post方式提交
         if (!is_array($data)) {
 
             $headers = array("Content-Type: application/json");
