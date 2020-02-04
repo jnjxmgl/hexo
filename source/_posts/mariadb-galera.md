@@ -1,11 +1,14 @@
 ---
 title: mariadb数据库集群配置
 date: 2020-02-01 11:22:10
-tags:
+tags: 
+- mysql
+- centos7
+categories: SQL
 ---
 > 先决条件
 
-三个运行mariadb的服务器,这里使用192.168.91.129,192.168.91.130,192.168.91.131
+两到三个运行mariadb的服务器,这里使用192.168.91.129,192.168.91.130,192.168.91.131
 
 `安装ius和epel源`
 
@@ -28,7 +31,7 @@ yum install mariadb103-server.x86_64 mariadb103-server-galera.x86_64 -y
 `关闭防火墙及selinux`
 
 ```shell
-systemctl stop firewalld
+systemctl stop firewalld #如果有特殊需求,galera模式下使用4567端口,需要同时开启UDP和TCP的4567端口
 ```
 
 `vi /etc/selinux/config`
