@@ -1,8 +1,12 @@
 ---
 title: ubuntu server 设置静态ip
 date: 2020-02-19 11:39:35
-tags: Ubuntu
-categories: linux
+tags: 
+- ubuntu
+- ip
+categories: 
+- linux
+- ubuntu
 ---
 > 本例子在ubuntu 18.04中可用
 
@@ -29,4 +33,20 @@ network:
 
 #ubuntu server 18.04 配置静态ip
 
+```
+
+应用网络配置
+
+```shell
+sudo netplan apply
+```
+
+如果默认得网关做了变更,还需要修改`/etc/resolv.conf`的内容,将
+```
+nameserver xxx.xxx.xxx.xxx
+```
+修改成当下得网关,即:
+
+```
+nameserver 192.168.6.2
 ```
