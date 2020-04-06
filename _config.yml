@@ -92,3 +92,27 @@ theme: hexo-theme-next
   # xz_appid: 'xxxxxx' ## 你的熊掌号 appid
   # xz_token: 'xxxxxx' ## 你的熊掌号 token
   # xz_count: 10 ## 从所有的提交的数据当中选取最新的10条,该数量跟你的熊掌号而定
+deploy:
+  - type: cos-cdn   # 百度
+  - cloud: tencent # 百度熊掌号
+  - bucket: imgl-net-1259698252
+  - region: ap-beijing
+  - secretId: AKIDIgxxxxxxxxxxxxxxxxxxxx0SepjX
+  - secretKey: qXPCbxxxxxxxxxxxxxxxxxxxxsJZfdR
+# deploy: 
+#    type: qiniu
+#    accessKey: <accessKey>
+#    secretKey: <secretKey>
+#    # 华东: Zone_z0, 华北: Zone_z1, 华南: Zone_z2, 北美: Zone_na0, 东南亚: Zone_as0
+#    zone: <zone>
+#    # the name of bucket
+#    scope: <scope>
+#    # example http://www.a.com/,http://www.b.cn/
+#    dirsToRefresh: <dirsToRefresh> 
+#    # default is 3600
+#    expires: [expires]
+#    # default is true
+#    cover: [true|false]
+#    # default is false
+#    refreshCdn:  [true|false]
+
