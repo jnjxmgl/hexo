@@ -5,7 +5,7 @@ tags: mysql
 categories: SQL
 ---
 
-> 1. 定义变量赋值:
+> 定义变量赋值:
 
     declare @i int default 0;
 
@@ -17,9 +17,8 @@ categories: SQL
 
     select @i i;
 
-> 2. 结果对象赋值:
+> 结果对象赋值:
 
     select username into @j from wp_admin_user where id=3;
 
     select @j;
-

@@ -8,8 +8,10 @@ categories:
 - debian
 ---
 > apt
+
 ```shell
-jnjxmgl@debian:~$ apt 
+jnjxmgl@debian:~$ apt
+
 apt 1.8.2 (amd64)
 用法： apt [选项] 命令
 
@@ -37,9 +39,12 @@ apt 1.8.2 (amd64)
 关于安全方面的细节可以参考 apt-secure(8).
                                          本 APT 具有超级牛力。
 ```
+
 > apt-get
-```shell                                         
-jnjxmgl@debian:~$ apt-get 
+
+```shell
+
+jnjxmgl@debian:~$ apt-get
 apt 1.8.2 (amd64)
 用法： apt-get [选项] 命令
 　　　 apt-get [选项] install|remove 软件包1 [软件包2 ...]
@@ -51,8 +56,8 @@ apt-get 可以从认证软件源下载软件包及相关信息，以便安装和
 常用命令：
   update - 取回更新的软件包列表信息
   upgrade - 进行一次升级
-  install - 安装新的软件包(注：软件包名称是 libc6 而非 libc6.deb)   
-  reinstall - Reinstall packages (pkg is libc6 not libc6.deb)       
+  install - 安装新的软件包(注：软件包名称是 libc6 而非 libc6.deb)
+  reinstall - Reinstall packages (pkg is libc6 not libc6.deb)
   remove - 卸载软件包
   purge - 卸载并清除软件包的配置
   autoremove - 卸载所有自动安装且不再使用的软件包
@@ -73,7 +78,9 @@ apt-get 可以从认证软件源下载软件包及相关信息，以便安装和
 关于安全方面的细节可以参考 apt-secure(8).
                                          本 APT 具有超级牛力。
 ```
+
 > apt-cache
+
 ```shell
 jnjxmgl@debian:~$ apt-cache
 apt 1.8.2 (amd64)
