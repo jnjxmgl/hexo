@@ -3,6 +3,12 @@ title: scp命令文件传输
 date: 2019-08-03 09:23:03
 tags: centos7
 categories: linux
+keywords:
+
+- scp
+- scp命令
+- scp命令文件传输
+
 ---
 在linux下一般用scp这个命令来通过ssh传输文件。
 

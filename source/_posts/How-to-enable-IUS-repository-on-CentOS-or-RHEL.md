@@ -5,6 +5,12 @@ tags:
 - centos7
 - ius
 categories: linux
+keywords:
+- 使用ius源
+- centos7下使用ius源
+- ius-release
+
+
 ---
 > 设定
 

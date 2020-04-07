@@ -5,6 +5,10 @@ tags:
 - nodejs
 - centos7 
 categories: linux
+keywords:
+- NODEJS在LINUX系统上安装
+- ln 命令
+
 ---
 
 > 1、去官网下载和自己系统匹配的文件：

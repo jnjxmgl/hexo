@@ -5,6 +5,11 @@ tags:
 - docker
 - centos7
 categories: linux
+keywords:
+- uname -r
+- 启动docker
+- 在linux安装docker
+
 ---
 > 前提条件
 

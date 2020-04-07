@@ -11,6 +11,16 @@ categories:
 - nginx
 - php
 - mysql
+keywords:
+
+- ubuntu
+- ubuntu server
+- 清华大学开源镜像站
+- 安装php7.2
+- nginx
+- mysql
+- mysql_secure_installation
+
 ---
 
 # **本教程以ubuntu18.04为例** 

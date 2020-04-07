@@ -5,6 +5,15 @@ tags:
 - centos7
 - firewalld
 categories: linux
+keywords:
+- 开放防火墙端口命令
+- firewalld
+- 配置firewalld-cmd
+- chkconfig
+- firewalld-cmd
+- firewall
+
+
 ---
 
 > 1、firewalld的基本使用

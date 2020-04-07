@@ -5,6 +5,13 @@ tags:
 - samba
 - centos7
 categories: linux
+keywords:
+- samba
+- nfs服务器
+- 搭建nfs服务器
+- 使用samba
+- smb.conf
+
 ---
 
 ## 安装

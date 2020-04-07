@@ -3,6 +3,12 @@ title: ifconfig 提示command not found
 date: 2019-07-14 15:13:41
 tags: centos7
 categories: linux
+keywords:
+- ifconfig
+- 提示command not found
+- ifconfig 提示command not found
+- net-tools
+- ipconfig和ifconfig
 ---
  如过我们再使用linux时, 使用ifconfig查看主机ip提示, 如下图:
 

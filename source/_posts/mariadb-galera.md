@@ -5,6 +5,17 @@ tags:
 - mysql
 - centos7
 categories: SQL
+keywords:
+- mariadb
+- mariadb数据库
+- mariadb数据库集群
+- mariadb数据库集群配置
+- 安装ius和epel源
+- mariadb-galera
+- wsrep_cluster_address
+- galera_new_cluster
+- wsrep_cluster_size
+
 ---
 > 先决条件
 

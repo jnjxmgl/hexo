@@ -9,6 +9,16 @@ tags:
 categories: 
 - linux
 - php
+keywords:
+- nginx
+- nginx与多个版本php环境搭建
+- php
+- fastcgi
+- 在centos7上配置nginx与apache负载均衡
+- apache负载均衡
+- 负载均衡
+- httpd
+
 ---
 
 > 停掉防火墙

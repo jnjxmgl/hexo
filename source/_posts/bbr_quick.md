@@ -1,10 +1,23 @@
 ---
 title: CentOS7 开启BBR加速
 date: 2019-07-14 14:17:11
-tags: 
+tags:
 - centos7
 - BBR
 categories: linux
+keywords:
+- CentOS7
+- BBR
+- 查看当前内核版本
+- ELRepo
+- 查看已安装的内核
+- kernel-ml
+- 开启 BBR
+- 修改grub2引导
+- grub2-set-default
+- net.ipv4.tcp_available_congestion_control
+- tcp_bbr
+- net.ipv4.tcp_congestion_control
 ---
 
 ## 升级内核

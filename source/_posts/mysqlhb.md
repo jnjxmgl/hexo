@@ -1,8 +1,15 @@
 ---
-title: MYSQL 数据库数据维护，备份 、还原数据
+title: MYSQL 数据库数据维护、备份 、还原数据
 date: 2019-07-14 15:02:34
 tags: mysql
 categories: SQL
+keywords:
+- MYSQL
+- 备份
+- 数据库数据维护
+- 还原数据
+- mysqldump
+
 ---
 
 

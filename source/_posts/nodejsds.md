@@ -3,6 +3,9 @@ title: NODEJS 定时请求指定HTTP地址任务, 以10S为例
 date: 2019-07-14 14:51:27
 tags: nodejs
 categories: javascript
+keywords:
+- NODEJS
+- 定时请求HTTP地址任务
 ---
 
 ``` javascript

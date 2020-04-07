@@ -5,6 +5,11 @@ tags:
 - jetbrains
 - centos7
 categories: linux
+keywords:
+- JETBRAINS
+- IDEA授权服务器
+- IDEA授权服务器搭建
+- 1017
 ---
 
 首先安装supervisor, 此步骤略过, 在centos7使用命令

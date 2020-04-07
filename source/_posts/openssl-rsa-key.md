@@ -5,6 +5,15 @@ tags:
 - php
 - openssl
 categories: linux
+keywords:
+- php
+- openssl
+- RSA密钥对
+- 使用openssl生成普通RSA密钥对
+- 生成普通RSA密钥对
+- 使用openssl
+- openssl生成普通RSA密钥对
+
 ---
 > 生成私钥
 ```shell

@@ -5,6 +5,13 @@ tags:
 - shadowsocks
 - centos7
 categories: linux
+keywords:
+- 搭建SHADOWSOCKS
+- VPN
+- shadowsocks.json
+- 启动Shadowsocks
+- ssserver
+
 ---
 
 安装python，安装过程遇到Y/n的一律输入Y（按顺序执行下面命令）：
@@ -67,7 +74,7 @@ categories: linux
 
 执行以下命令启动Shadowsocks：
 
-    ssserver-c /etc/shadowsocks.json-d start
+    ssserver -c /etc/shadowsocks.json-d start
 
 永久开启8388端口
 

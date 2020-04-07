@@ -5,6 +5,13 @@ tags: C#
 categories: 
 - windows
 - .NET
+keywords:
+- GetDataSet
+- Microsoft.ACE.OLEDB.12.0
+- OleDbConnection
+- OleDbDataAdapter
+- Exception
+
 ---
 
 ```C#

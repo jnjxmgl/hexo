@@ -5,6 +5,12 @@ tags:
 - centos7
 - NFS
 categories: linux
+keywords:
+- 设置nfs服务器
+- 设置nfs客户端
+- nfs
+- no_subtree_check
+
 ---
 NFS是基于Sun的RPC（远程过程调用）构建的分布式文件系统协议。NFS在LAN网络环境中通常用于共享目录和文件，并且在许多网络附加存储（NAS）系统和云存储后端中也都采用了NFS。在典型的NFS部署中，NFS服务器将其本地文件系统的一部分导出为NFS共享，并且一个或多个远程NFS客户端在其自己的文件系统中安装和访问导出的共享。
 

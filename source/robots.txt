@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Sitemap: https://www.imgl.net/baidusitemap.xml
+Sitemap: https://www.imgl.net/sitemap.xml

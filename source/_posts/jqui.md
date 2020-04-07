@@ -3,6 +3,12 @@ title: JQUERY UI 日期控件
 date: 2019-07-14 14:17:11
 tags: jquery ui
 categories: javascript
+keywords:
+- JQUERY
+- JQUERY UI 
+- 日期控件
+- datepicker
+
 ---
 
 ``` html

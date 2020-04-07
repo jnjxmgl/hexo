@@ -5,6 +5,13 @@ tags:
 - supervisor
 - centos7
 categories: linux
+keywords:
+
+- supervisor
+- supervisord
+- echo_supervisord_conf
+- supervisorctl
+- unix:///tmp/supervisor.sock no such file
 ---
 
 **centos7安装**

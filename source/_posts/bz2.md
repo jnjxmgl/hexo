@@ -3,6 +3,14 @@ title: 解压BZ2文件错误
 date: 2019-07-14 14:17:11
 tags: centos7
 categories: linux
+keywords:
+- bzip2
+- No such file or directory
+- Child returned status 2
+- exiting now
+- tar -jxvf
+- install bzip2
+
 ---
 
 > 错误信息

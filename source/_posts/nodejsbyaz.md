@@ -5,6 +5,12 @@ tags:
 - nodejs
 - centos7 
 categories: linux
+
+keywords:
+- NODEJS编译安装
+- NODEJS
+- gcc
+
 ---
 
 

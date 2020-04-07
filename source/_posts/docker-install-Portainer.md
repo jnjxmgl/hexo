@@ -5,6 +5,12 @@ tags:
 - docker
 - centos7
 categories: linux
+keywords:
+- 什么是Portainer？
+- Swarm集群和服务
+- 下载Portainer镜像
+- 运行Portainer
+
 ---
 一、什么是Portainer？
 

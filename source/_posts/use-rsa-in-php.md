@@ -5,6 +5,17 @@ tags:
 - php
 - openssl
 categories: linux
+keywords:
+- rsa加密
+- php的rsa加密
+- 在php中使用RSA加密算法
+- openssl
+- php
+- openssl_pkey_get_private
+- openssl_pkey_get_public
+- openssl_private_encrypt
+- openssl_public_encrypt
+
 ---
 > 前情提要
 

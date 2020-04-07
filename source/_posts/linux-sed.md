@@ -2,6 +2,16 @@
 title: Linux批量替换文件夹及子文件夹下的所有文件内容
 date: 2019-12-10 15:35:36
 tags:
+- linux
+categories: linux
+keywords:
+- Linux批量替换文件夹及子文件夹下的所有文件内容
+- Linux批量替换文件夹
+- Linux批量替换所有文件内容
+- sed
+- sed命令
+
+
 ---
 
 ```shell

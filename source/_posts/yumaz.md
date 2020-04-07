@@ -3,6 +3,10 @@ title: yum 使用指定源安装软件包
 date: 2019-07-14 14:26:07
 tags: centos7
 categories: linux
+keywords:
+- yum 使用指定源安装软件包
+- --enablerepo=epel
+
 ---
 
 有些时候我们在安装相应的源以后, 直接使用命令安装源中的软件, 会提示软件包不存在, 这种情况下

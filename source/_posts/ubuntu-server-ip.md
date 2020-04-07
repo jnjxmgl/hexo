@@ -7,6 +7,17 @@ tags:
 categories: 
 - linux
 - ubuntu
+keywords:
+- 设置静态ip
+- ubuntu
+- ubuntu server
+- ubuntu server 设置静态ip
+- netplan
+- 50-cloud-init.yaml
+- netplan apply
+- resolv
+- resolv.conf
+
 ---
 > 本例子在ubuntu 18.04中可用
 

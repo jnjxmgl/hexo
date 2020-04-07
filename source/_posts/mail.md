@@ -1,11 +1,20 @@
 ---
-title: CENTOS7 POSTFIX+DOVECOT TLS认证
+title: 搭建mail邮箱服务器
 date: 2019-07-14 14:33:21
 tags:
 - postfix
 - centos7
 - dovecot
 categories: linux
+keywords:
+- POSTFIX
+- DOVECOT
+- TLS认证
+- POSTFIX+DOVECOT
+- 搭建mail邮箱服务器
+- imap 
+- pop3
+
 ---
 
 ## 一、准备工作

@@ -12,6 +12,11 @@ categories:
 - nginx
 - php
 - windows
+keywords:
+- nginx
+- nginx与多个版本php环境搭建
+- php
+- fastcgi
 
 ---
 

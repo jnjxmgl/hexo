@@ -6,6 +6,14 @@ tags:
 categories: 
 - linux
 - debian
+keywords:
+- 命令行软件包管理器 apt
+- apt-get
+- apt-cache
+- sources.list
+- apt.conf
+- 什么是apt
+
 ---
 > apt
 

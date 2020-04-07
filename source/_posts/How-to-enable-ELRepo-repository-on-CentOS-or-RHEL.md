@@ -5,6 +5,10 @@ tags:
 - centos7
 - ELRepo
 categories: linux
+keywords:
+- ELRepo
+- elrepo-kernel
+- repolist
 ---
 尽管CentOS / RHEL平台维护着几个正式的存储库（e.g., base, updates, contrib），但是在软件覆盖范围和发行周期方面却缺乏。为了弥合可用资源与常用需求之间的鸿沟，创建了第三方存储库来满足社区对常用软件包的需求。
 

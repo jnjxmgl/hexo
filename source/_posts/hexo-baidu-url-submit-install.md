@@ -6,6 +6,13 @@ tags:
 categories:
   - SEO
 date: 2020-04-06 14:41:00
+keywords:
+- hexo-baidu-url-submit
+- 百度搜索资源平台
+- www.imgl.net
+- hexo deploy
+- hexo-baidu-url-submit,百度收录必备良药
+
 ---
 
 > 安装

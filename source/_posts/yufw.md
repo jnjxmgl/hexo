@@ -3,6 +3,12 @@ title: windows域服务器搭建
 date: 2019-07-19 19:38:51
 tags: 域服务器
 categories: windows
+keywords:
+- Windows server 2008
+- 服务管理器
+- Active Directory
+- 创建域组织及用户
+
 ---
 本安装教程在Windows server 2008 r2上测试通过, 其他windows服务器安装类似
 

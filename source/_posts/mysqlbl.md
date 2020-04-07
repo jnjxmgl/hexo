@@ -3,6 +3,12 @@ title: MYSQL变量定义
 date: 2019-07-14 15:05:01
 tags: mysql
 categories: SQL
+keywords:
+- MYSQL
+- MYSQL变量定义
+- MYSQL对象赋值
+- MYSQL定义变量赋值
+
 ---
 
 > 定义变量赋值:

@@ -5,6 +5,14 @@ tags:
 - centos7
 - swap
 categories: linux
+keywords:
+- dd
+- swap分区
+- 启用交换分区
+- fstab
+- swapon
+- mkswap
+
 ---
 > 1.创建要作为swap分区的文件:增加1GB大小的交换分区，则命令写法如下，其中的count等于想要的块的数量（bs*count=文件大小）。
 ```

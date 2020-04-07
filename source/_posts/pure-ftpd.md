@@ -5,6 +5,13 @@ tags:
 - ftp
 - centos7
 categories: ftp
+keywords:
+- pure-ftpd
+- 配置pure-ftpd的mysql环境
+- mariadb
+- mysql_secure_installation
+- pureftpd-mysql
+
 ---
 `说明:` 我这里讲的是yum安装及配置,编译安装的出门左转.
 

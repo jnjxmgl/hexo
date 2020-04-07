@@ -3,6 +3,13 @@ title: 如何从Linux上的RPM软件包中提取文件
 date: 2019-11-01 11:20:50
 tags: centos7
 categories: linux
+keywords:
+- 列出RPM软件包
+- 列出RPM软件包中的文件
+- repoquery
+- yum-utils
+- 如何从Linux上的RPM软件包中提取文件
+
 ---
 
 从某个地方下载了一个 RPM 文件（epel-release-latest-8.noarch.rpm），我想从 RPM 软件包中手动提取文件。有没有一种无需安装就可以从 RPM 软件包中提取文件的简便方法？

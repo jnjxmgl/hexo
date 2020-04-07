@@ -5,6 +5,12 @@ tags:
 - centos7
 - kernel
 categories: linux
+keywords:
+- 升级内核
+- 删除旧内核
+- 修改grub2引导
+- 安装相同内核版本的`devel`或者`headers`、`tools`等
+- enablerepo=elrepo-kernel
 ---
 
 ## 升级内核
@@ -78,7 +84,7 @@ categories: linux
 
     5.3.8-1.el7.elrepo.x86_64
 
-删除旧内核 
+删除旧内核
 
     yum -y remove kernel* #说明：删除旧内核的目的是为了防止 yum 更新旧版内核之后覆盖了 grub 默认启动项
 

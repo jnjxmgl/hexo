@@ -10,12 +10,15 @@ keywords: 人生最重要的不是努力,而是方向
 author: JNJXMGL
 language: zh-CN
 timezone: Asia/Shanghai
-
+sitemap: 
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://www.imgl.net
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title.html
 permalink_defaults:
 
 # Directory
@@ -92,13 +95,13 @@ theme: hexo-theme-next
   # xz_appid: 'xxxxxx' ## 你的熊掌号 appid
   # xz_token: 'xxxxxx' ## 你的熊掌号 token
   # xz_count: 10 ## 从所有的提交的数据当中选取最新的10条,该数量跟你的熊掌号而定
-deploy:
-  - type: cos-cdn   # 百度
-  - cloud: tencent # 百度熊掌号
-  - bucket: imgl-net-1259698252
-  - region: ap-beijing
-  - secretId: AKIDIgxxxxxxxxxxxxxxxxxxxx0SepjX
-  - secretKey: qXPCbxxxxxxxxxxxxxxxxxxxxsJZfdR
+# deploy:
+#   - type: cos-cdn  
+#   - cloud: tencent 
+#   - bucket: imgl-net-1259698252
+#   - region: ap-beijing
+#   - secretId: AKIDIgxxxxxxxxxxxxxxxxxxxx0SepjX
+#   - secretKey: qXPCbxxxxxxxxxxxxxxxxxxxxsJZfdR
 # deploy: 
 #    type: qiniu
 #    accessKey: <accessKey>

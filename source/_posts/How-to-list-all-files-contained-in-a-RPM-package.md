@@ -1,7 +1,17 @@
 ---
 title: 如何列出RPM软件包中包含的所有文件
 date: 2019-11-01 11:40:10
-tags:
+tags: 
+- centos7
+- RPM
+categories: linux
+keywords:
+- 列出RPM软件包
+- 列出RPM软件包中的文件
+- repoquery
+- yum-utils
+- 如何从Linux上的RPM软件包中提取文件
+
 ---
 
 假设您要在Fedora或CentOS上安装特定的RPM软件包，但是要在安装前检查软件包的内容。当您尝试在系统中安装任何丢失的二进制文件或库文件时，可能会出现这种情况。

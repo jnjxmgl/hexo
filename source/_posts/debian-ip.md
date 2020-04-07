@@ -7,6 +7,17 @@ tags:
 categories: 
 - linux
 - debian
+keywords:
+- debian 设置静态ip
+- 设置静态ip
+- debian
+- nameserver
+- /etc/network/interfaces
+- dns-nameservers
+- netmask
+- iface
+- gateway
+
 ---
 
 编辑/etc/network/interfaces文件

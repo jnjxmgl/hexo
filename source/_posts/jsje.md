@@ -3,6 +3,11 @@ title: JS实现INPUT标签输入有效的金额
 date: 2019-07-14 14:47:57
 tags: js
 categories: javascript
+keywords:
+- JS实现INPUT标签输入有效的金额
+- INPUT标签输入有效的金额
+
+
 ---
 
     obj.value = obj.value.replace(/1/g, ""); //清除"数字"和"."以外的字符

@@ -3,6 +3,12 @@ title: 在php使用curl进行get请求接口
 date: 2019-12-02 13:14:49
 tags: php
 categories: linux
+keywords:
+- php
+- php使用curl
+- curl进行get
+- 在php使用curl进行get请求接口
+
 ---
 ```php
     /**
