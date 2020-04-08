@@ -133,11 +133,11 @@ keywords:
 
 增加域名解析，如下图
 
-{% asset_img image-1-1024x460.png 域名配置 %}
+![域名配置](https://res.imgl.net/hexo/mail/image-1-1024x460.png "域名配置")
 
 注：A记录需要设置@解析和mail解析，ip换成你的，CNAME解析设置这俩就行，MX解析记得设置成你的域名mail.domain.com 优先级随意
 
 然后我们就能使用admin账户再foxmail上登陆邮箱了。
 
-{% asset_img image-2.png 邮箱配置 %}
+![邮箱配置](https://res.imgl.net/hexo/mail/image-2.png "邮箱配置")
 

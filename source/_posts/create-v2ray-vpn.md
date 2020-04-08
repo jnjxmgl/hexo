@@ -34,11 +34,11 @@ categories:
 
 ***服务器端:***
 
-{% asset_link v2ray-linux-64.zip v2ray服务器端 %}
+![v2ray服务器端](http://q8ch2wiw7.bkt.clouddn.com/hexo/create-v2ray-vpn/v2ray-linux-64.zip "v2ray服务器端")
 
 ***PC端:***
 
-{% asset_link v2rayN.zip v2ray-PC端 %}
+![v2ray-PC端](http://q8ch2wiw7.bkt.clouddn.com/hexo/create-v2ray-vpn/v2rayN.zip "v2ray-PC端")
 
 
 >搭环境

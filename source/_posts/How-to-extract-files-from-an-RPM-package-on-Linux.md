@@ -50,4 +50,4 @@ RPM 软件包包含一组文件，通常是编译后的软件二进制文件，�
 - -m：保留修改时间
 - -v：详细
 
-{% asset_img 20191101113834.png epel-release-latest-8.noarch.rpm %}
+![epel-release-latest-8.noarch.rpm](https://res.imgl.net/hexo/How-to-extract-files-from-an-RPM-package-on-Linux/20191101113834.png "epel-release-latest-8.noarch.rpm")

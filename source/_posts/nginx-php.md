@@ -48,7 +48,7 @@ CGI程序通过环境变量、命令行、标准输入输出进行交互，因�
 
 为什么我们要讲反向代理, 是因为Nginx不支持对外部程序的直接调用或者解析，所有的外部程序（包括PHP）必须通过FastCGI接口来调用, 而这个调用过程就是通过反向代理实现的。FastCGI接口在Linux下是socket（这个socket可以是文件socket，也可以是ip socket）。如下图:
 
-{% asset_img fxdl.png 安装服务 %}
+![安装服务](https://res.imgl.net/hexo/nginx-php/fxdl.png "安装服务")
 
 如图所示, php-cgi.exe在服务器内部是以服务的形式, 通过9000端口与nginx进行通讯的, 中间过程是反向代理, 最后通过nginx返给客户端
 
@@ -167,7 +167,7 @@ CGI程序通过环境变量、命令行、标准输入输出进行交互，因�
 
 然后打开cmd或者powershell ，执行命令
 
-{% asset_img Windows-Server-2008-R2-x64-2019-07-21-15-08-36.png 启动nginx %}
+![启动nginx](https://res.imgl.net/hexo/nginx-php/Windows-Server-2008-R2-x64-2019-07-21-15-08-36.png "启动nginx")
 
     cd 
     start nginx
@@ -180,11 +180,11 @@ CGI程序通过环境变量、命令行、标准输入输出进行交互，因�
 
 我们打开浏览器，输入 `http://localhost` , 就可以看到如上图所示，nginx服务进程已经启动了。
 
-{% asset_img qd.png nginx启动了 %}
+![nginx启动了](https://res.imgl.net/hexo/nginx-php/qd.png "nginx启动了")
 
 下面开始配置PHP，因为是多个版本，这里我门下在php5.6和php7.2两大主流版本。这里我们去php的官网(https://windows.php.net/download/)去下载, 如下图所示
 
-{% asset_img 2019-07-21.jpg 下载php7.2 %}
+![下载php7.2](https://res.imgl.net/hexo/nginx-php/2019-07-21.jpg "下载php7.2")
 
 下载64位或者32位根据自身系统需要，另外细心的你可能发现我为什么没有 `Thread Safe` 版本，是因为这个版本不适合我们今天所讲的东西，我摘了一下官网的解释，自己体会，看不懂的话，也没有关系，后期自行补脑。
 
@@ -203,23 +203,23 @@ CGI程序通过环境变量、命令行、标准输入输出进行交互，因�
 
 至于5.6版本，我们需要到(https://windows.php.net/downloads/releases/archives/)这里去下在，可已通过浏览器搜索关键字 `php-5.6.40-nts-Win32-VC11-x64` ，定位我们要下载的版本。
 
-{% asset_img 2019-07-21_5.6.jpg 下载php5.6 %}
+![下载php5.6](https://res.imgl.net/hexo/nginx-php/2019-07-21_5.6.jpg "下载php5.6")
 
 > 配置多个php版本
 
 下载完成以后我们分别解压到 `C盘` 的 `C:\php-5.6.40-nts-Win32-VC11-x64` 和 `C:\php-7.3.7-nts-Win32-VC15-x64` , 然后进入分别进入两个php版本相应的目录，找到下图所示的程序名称，[ `右键` ]->[ `发送到` ]->[ `桌面快捷方式` ]，并将两个快捷方式重命名，最后[ `右键` ]->[ `属性` ]->[ `目标` ]这里追加 `-b 127.0.0.1:9000` ，另一个改为 `-b 127.0.0.1:9001` ，如下图所示，
 
-{% asset_img Windows-Server-2008-R2-x64-2019-07-21-16-05-07.png 配置两个不同的真挺端口 %}
+![配置两个不同的真挺端口](https://res.imgl.net/hexo/nginx-php/Windows-Server-2008-R2-x64-2019-07-21-16-05-07.png "配置两个不同的真挺端口")
 
 并且将同目录下的 `php.ini-development` 重命名为 `php.ini` ，最后双击两个快捷方式运行。
 
-{% asset_img Windows-Server-2008-R2-x64-2019-07-21-15-42-23.png vc++11 %}
+![vc++11](https://res.imgl.net/hexo/nginx-php/Windows-Server-2008-R2-x64-2019-07-21-15-42-23.png "vc++11")
 
 如果出现图上所示的错误提示，说明我们缺少相应的c++运行时，因为windows下的php运行库是通过Vc++进行开发编译的，具体要下载哪个版本，我们可已通过php文件夹上的名字来判断，x64我们就需要64位的vc++，然后根据VC11是vc++2012, VC15是vc++2015, 去微软官方或者百度搜索下进行下载，这里不做演示。
 
 启动php-cgi以后，最终结果是如下图所示的样子
 
-{% asset_img Windows-Server-2008-R2-x64-2019-07-21-15-55-49.jpg 启动php-cgi.exe %}
+![启动php-cgi.exe](https://res.imgl.net/hexo/nginx-php/Windows-Server-2008-R2-x64-2019-07-21-15-55-49.jpg "启动php-cgi.exe")
 
 最后我们再html和html2中，分别创建index.php，内容：
 
@@ -233,9 +233,9 @@ CGI程序通过环境变量、命令行、标准输入输出进行交互，因�
 
 最后我们在浏览器中输入 `http://localhost/index.php` 和 `http://localhost:8080/index.php` , 如果能看到如下面两个图所示，就说明我们配置成功了。
 
-{% asset_img Windows-Server-2008-R2-x64-2019-07-21-17-04-53.png 验证5.6 %}
+![验证5.6](https://res.imgl.net/hexo/nginx-php/Windows-Server-2008-R2-x64-2019-07-21-17-04-53.png "验证5.6")
 
-{% asset_img Windows-Server-2008-R2-x64-2019-07-21-17-05-03.png 验证7.2 %}
+![验证7.2](https://res.imgl.net/hexo/nginx-php/Windows-Server-2008-R2-x64-2019-07-21-17-05-03.png "验证7.2")
 
 *注：本教程只讲述基本入门配置，另外需要优化的升级配置自行研究。*
 

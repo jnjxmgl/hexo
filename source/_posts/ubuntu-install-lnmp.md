@@ -65,7 +65,7 @@ Ubuntu 的软件源配置文件是 /etc/apt/sources.list。将系统自带的该
 
 如下图，代表安装启动成功。
 
-{% asset_img 20191021105737.png nginx启动状态 %}
+![nginx启动状态](https://res.imgl.net/hexo/ubuntu-install-lnmp/20191021105737.png "nginx启动状态")
 
 4.设置开机启动
 ```shell
@@ -93,7 +93,7 @@ ubuntu 18.04 源站更新了最新的php7.2,开始安装.
 
 如下图，代表安装启动成功。
 
-{% asset_img 20191021111315.png php7.2-fpm启动状态 %}
+![php7.2-fpm启动状态](https://res.imgl.net/hexo/ubuntu-install-lnmp/20191021111315.png "php7.2-fpm启动状态")
 
 4.设置开机启动
 ```shell
@@ -107,7 +107,7 @@ ubuntu 18.04 源站更新了最新的mysql5.7,开始安装.我们可以使用如
     sudo apt search mysql-server
 ```
 
-{% asset_img 20191021111601.png mysql-server包 %}
+![mysql-server包](https://res.imgl.net/hexo/ubuntu-install-lnmp/20191021111601.png "mysql-server包")
 
 1.安装mysql-server5.7
 ```shell
@@ -126,7 +126,7 @@ ubuntu 18.04 源站更新了最新的mysql5.7,开始安装.我们可以使用如
 
 如下图，代表安装启动成功。
 
-{% asset_img 20191021113001.png mysql-server启动状态 %}
+![mysql-server启动状态](https://res.imgl.net/hexo/ubuntu-install-lnmp/20191021113001.png "mysql-server启动状态")
 
 
 4.设置开机启动
@@ -205,7 +205,7 @@ ubuntu 18.04 源站更新了最新的mysql5.7,开始安装.我们可以使用如
     cd /etc/nginx/sites-enabled/
 ```
 
-{% asset_img 20191021113459.png 配置文件位置 %}
+![配置文件位置](https://res.imgl.net/hexo/ubuntu-install-lnmp/20191021113459.png "配置文件位置")
 
 ```shell
     vi default
@@ -213,7 +213,7 @@ ubuntu 18.04 源站更新了最新的mysql5.7,开始安装.我们可以使用如
 
 找到下图部分
 
-{% asset_img 20191021114817.png 原配置 %}
+![原配置](https://res.imgl.net/hexo/ubuntu-install-lnmp/20191021114817.png "原配置")
 
 修改如下:
 
@@ -240,4 +240,4 @@ phpinfo();
 
 最后请求<http://IP/index.php> ,如下图所示,即表示环境配置成功!
 
-{% asset_img 20191021132350.png phpinfo %}
+![phpinfo](https://res.imgl.net/hexo/ubuntu-install-lnmp/20191021132350.png "phpinfo")

@@ -24,7 +24,7 @@ npm install hexo-baidu-url-submit --save
 
 然后，同样在根目录下，把以下内容配置到`_config.yml`文件中:
 
-{% asset_img baidu_20200406152200.png 百度搜索资源平台 %}
+![百度搜索资源平台](https://res.imgl.net/hexo/hexo-baidu-url-submit-install/baidu_20200406152200.png "百度搜索资源平台")
 
     baidu_url_submit:
     count: 1 ## 提交最新的一个链接,这里要根据baidu_urls.txt文档中的实际链接数量

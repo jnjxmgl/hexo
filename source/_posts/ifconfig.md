@@ -16,7 +16,7 @@ keywords:
  -bash: ifconfig: command not found
 ```
 
-{% asset_img wzd. PNG 'command not found' %}
+![command not found](https://res.imgl.net/hexo/ifconfig/wzd.PNG "command not found")
 
 是因为我门没有安装相关的命令程序.
 
@@ -29,17 +29,17 @@ keywords:
 
 来确认需要安装的程序包, 比如我执行命令后会得到如下结果:
 
-{% asset_img azb. PNG 找到相关安装包名 %}
+![找到相关安装包名](https://res.imgl.net/hexo/ifconfig/azb.PNG "找到相关安装包名")
 
 根据提示, 我们执行, 如下图
 
     yum install -y net-tools.x86_64
 
-{% asset_img az. PNG 执行安装 %}
+![执行安装](https://res.imgl.net/hexo/ifconfig/az.PNG "执行安装")
 
 最后我们再次执行 `ifconfig` , 就可以看到我们的网络ip配置信息了.
 
-{% asset_img ip. PNG 结果 %}
+![结果](https://res.imgl.net/hexo/ifconfig/ip.PNG "结果")
 
 *最后说一下: `ifconfig` 和windows系统下的 `ipconfig` 很像, 很多初学者会在linux中执行ipconfig, 这显然是~~不可以的~~, 请认真识别, 不要犯这种低级错误*
 

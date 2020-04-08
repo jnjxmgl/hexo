@@ -36,7 +36,7 @@ sudo rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-4.el7.elrepo.noarch.rpm
 ```
 yum repolist enabled
 ```
-{% asset_img 20191031161312.png 检查ELRepo存储库的内容 %}
+![检查ELRepo存储库的内容](https://res.imgl.net/hexo/How-to-enable-ELRepo-repository-on-CentOS-or-RHEL/20191031161312.png "检查ELRepo存储库的内容")
 
 但是个别时候,你需要显示指定使用`ELRepo`源,如下:
 ```

@@ -88,11 +88,11 @@ mount -t nfs 192.168.1.174:/var/nfs /mnt/nfs
 ```
 直接执行`mount`命令
 
-{% asset_img 26056223006.jpg mount %}
+![mount](https://res.imgl.net/hexo/How-to-set-up-NFS-server-and-client-on-CentOS-7/26056223006.jpg "mount")
 
 `df`命令应显示从NFS共享额外的存储空间。
 
-{% asset_img 26056223116.jpg df %}
+![df](https://res.imgl.net/hexo/How-to-set-up-NFS-server-and-client-on-CentOS-7/26056223116.jpg "df")
 
 要卸载NFS共享，请使用umount命令。
 ```
