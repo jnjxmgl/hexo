@@ -77,14 +77,6 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: hexo-theme-next
-
-# deploy:
-#   - type: cos-cdn  
-#   - cloud: tencent 
-#   - bucket: imgl-net-1259698252
-#   - region: ap-beijing
-#   - secretId: AKIDIgxxxxxxxxxxxxxxxxxxxx0SepjX
-#   - secretKey: qXPCbxxxxxxxxxxxxxxxxxxxxsJZfdR
 # deploy: 
 #    type: qiniu
 #    accessKey: <accessKey>
