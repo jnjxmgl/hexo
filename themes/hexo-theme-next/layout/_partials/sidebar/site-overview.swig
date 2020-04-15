@@ -108,7 +108,14 @@
     {{ next_url(ccURL, ccImage, {class: 'cc-opacity'}) }}
   </div>
 {%- endif %}
-
+<div class="_vyfieu2yx2i"></div>
+<script type="text/javascript">
+    (window.slotbydup = window.slotbydup || []).push({
+        id: "u5993468",
+        container: "_vyfieu2yx2i",
+        async: true
+    });
+</script>
 {# Blogroll #}
 {%- if theme.links %}
   <div class="links-of-blogroll motion-element">

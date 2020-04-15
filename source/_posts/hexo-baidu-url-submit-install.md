@@ -1,6 +1,5 @@
 ---
 title: 'hexo-baidu-url-submit,百度收录必备良药'
-author: JNJXMGL
 tags:
   - baidu
 categories:
@@ -58,3 +57,6 @@ npm install hexo-baidu-url-submit --save
 新链接的产生， `hexo generate` 会产生一个文本文件，里面包含最新的链接
 
 新链接的提交， `hexo deploy` 会从上述文件中读取链接，提交至百度搜索引擎
+
+另外备注一下,用的比较多的NEXT主题自带这些功能,可以从配置文件`_config.yml`中找下,在这里给主题哥点个赞
+

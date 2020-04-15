@@ -1,3 +1,13 @@
+
+<div class="_63khapqt3rf"></div>
+<script type="text/javascript">
+    (window.slotbydup = window.slotbydup || []).push({
+        id: "u5993437",
+        container: "_63khapqt3rf",
+        async: true
+    });
+</script>
+
 {%- if theme.footer.beian.enable %}
   <div class="beian">
     {{- next_url('http://www.beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
@@ -70,4 +80,7 @@
   </div>
 {%- endif %}
 
-{{- next_inject('footer') }}
+{{- next_inject('footer') }}                                                                            
+<!-- 多条广告如下脚本只需引入一次 -->
+<script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js" async="async" defer="defer" >
+</script>
