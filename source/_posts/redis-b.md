@@ -1,5 +1,5 @@
 ---
-title: redis并发小测试
+title: redis消息队列
 date: 2020-04-14 15:30:47
 tags:
 - redis
@@ -8,8 +8,8 @@ categories:
 - redis
 - php
 keywords:
-- redis并发小测试
-- php redis并发小测试
+- redis消息队列
+- php redis消息队列
 ---
 
 > 模拟多用户同时访问
@@ -27,10 +27,11 @@ for($i=0;$i<5000;$i++){
 }
 ```
 
-> 出列操作,模拟业务
+> 出列操作,模拟业务,使用`php index.php`守护执行
 
 ```php
 <?php
+//redis数据出队操作
 $redis = new Redis();
 $redis->pconnect('127.0.0.1',6379);
 while(true){
