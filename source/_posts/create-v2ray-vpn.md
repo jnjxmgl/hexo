@@ -10,7 +10,7 @@ categories:
 ---
 
 
-## <s>制作本教程的目的是忌于网上的一键脚本可能会安装一些挖矿的恶意程序,没有人权保证<s>
+## <s>制作本教程的目的是忌于网上的一键脚本可能会安装一些挖矿的恶意程序,没有人权保证,下面的配置用人格保证,不信的话可以去官方比对<s>
 
 由于v2ray官方网站的教程对于新手来说有些东西不容易理解,这里特意做了一篇文章教给大家v2ray的基本使用,以及基本的安全防护和nginx的分流,本教程需要你具备一点linux的使用知识
 
@@ -34,11 +34,11 @@ categories:
 
 ***服务器端:***
 
-![v2ray服务器端](http://q8ch2wiw7.bkt.clouddn.com/hexo/create-v2ray-vpn/v2ray-linux-64.zip "v2ray服务器端")
+https://res.imgl.net/hexo/create-v2ray-vpn/v2ray-linux-64.zip
 
 ***PC端:***
 
-![v2ray-PC端](http://q8ch2wiw7.bkt.clouddn.com/hexo/create-v2ray-vpn/v2rayN.zip "v2ray-PC端")
+https://res.imgl.net/hexo/create-v2ray-vpn/v2rayN.zip
 
 
 >搭环境

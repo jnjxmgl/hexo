@@ -20,7 +20,7 @@ $redis = new Redis();
 $redis->connect('127.0.0.1',6379);
 for($i=0;$i<5000;$i++){
     try{
-        $redis->LPUSH('click',$i);
+        $redis->LPUSH('data',$i);
     }catch(Exception $e){
         echo $e->getMessage();
     }
@@ -36,7 +36,7 @@ $redis = new Redis();
 $redis->pconnect('127.0.0.1',6379);
 while(true){
     try{
-        $value = $redis->LPOP('click');
+        $value = $redis->LPOP('data');
         if($value){
             var_dump($value)."\n";
         }
