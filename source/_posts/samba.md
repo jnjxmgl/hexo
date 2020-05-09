@@ -86,7 +86,7 @@ keywords:
 ## 创建共享目录
 
     [root@imgl samba]# mkdir -p /smb/{fileshare,webdev}
-    [root@imgl samba]# chown nobody:nobody /smb/fileshare/
+    [root@imgl samba]# chown nobody:nogroup /smb/fileshare/
     [root@imgl samba]# chown mgl:nfs /smb/webdev/
 
 注意设置属性，不然访问不了。
