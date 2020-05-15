@@ -11,6 +11,10 @@ categories:
 - ubuntu
 keywords:
 - ubuntu搭建mysql集群无法启动
+- mariadb集群无法启动
+- galera_recovery
+- Permission denied
+- galera配置mysql集群无法启动
 ---
 >安装
 
@@ -97,10 +101,8 @@ keywords:
 
  /tmp `是允许随便创建  但是不允许随便删除呀`
 
-集群启动,使用命令`galera_new_cluster`(需要root权限)的时候,root用去启动mysql,这一步没问提
-然后后面的事情,就跟root没关系了,后面的就交给了mysql用户,mysql用户去/tmp创建`/tmp/wsrep_recovery.HrmnwL`(点后面的字符串是随机的)的时候没有问题,
-然后这个逼想毁尸灭迹,想把写的东西删了,就触发了权限问题,没删除成功,然后mariadb就提示出错了
+集群启动,使用命令`galera_new_cluster`(需要root权限)的时候,root用去启动mysql,这一步没问提,root用户去/tmp创建`/tmp/wsrep_recovery.HrmnwL`(点后面的字符串是随机的)的时候没有问题,然后后面的事情,就跟root没关系了,后面的就交给了mysql用户,然后这个逼想毁尸灭迹,想把root写的东西`/tmp/wsrep_recovery.HrmnwL`删了,就触发了权限问题,没删除成功,然后mariadb就提示出错了,你说贱不贱,没事瞎删啥,强迫症!
 
 >解决办法
 
-直接`chmod 777 /tmp` 最直接,当然也有别的办法,请自行研究.
+直接`chmod 777 /tmp` 最直接,当然应该也有别的办法,只是我还不会,哈哈😄

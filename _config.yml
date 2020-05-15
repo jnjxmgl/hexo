@@ -78,20 +78,20 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: hexo-theme-next
-deploy: 
-   type: qiniu
-   accessKey: nCFWiU6P3R2E9FlFYSL8UCbUdk5ZrXnDV4UtWW0P
-   secretKey: tEqtjVpHtyh-WGY_eB9F9prv0W3DefkbbQlXxfvM
-   # 华东: Zone_z0, 华北: Zone_z1, 华南: Zone_z2, 北美: Zone_na0, 东南亚: Zone_as0
-   zone: Zone_z1
-   # the name of bucket
-   scope: imgl-net
-   # example http://www.a.com/,http://www.b.cn/
-   dirsToRefresh: https://www.imgl.net
-   # default is 3600
-  #  expires: [expires]
-  #  # default is true
-  #  cover: [true|false]
-   # default is false
-   refreshCdn:  true
+# deploy: 
+#    type: qiniu
+#    accessKey: nCFWiU6P3R2E9FlFYSL8UCbUdk5ZrXnDV4UtWW0P
+#    secretKey: tEqtjVpHtyh-WGY_eB9F9prv0W3DefkbbQlXxfvM
+#    # 华东: Zone_z0, 华北: Zone_z1, 华南: Zone_z2, 北美: Zone_na0, 东南亚: Zone_as0
+#    zone: Zone_z1
+#    # the name of bucket
+#    scope: imgl-net
+#    # example http://www.a.com/,http://www.b.cn/
+#    dirsToRefresh: https://www.imgl.net,https://imgl.net,
+#    # default is 3600
+#   #  expires: [expires]
+#   #  # default is true
+#   #  cover: [true|false]
+#    # default is false
+#    refreshCdn:  true
 
