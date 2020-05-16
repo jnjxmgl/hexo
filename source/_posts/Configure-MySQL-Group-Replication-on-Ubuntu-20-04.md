@@ -60,31 +60,32 @@ SSH 到服务器 1，以root身份登录到 MySQL 服务器。
     mysql> QUIT;
 
 步骤 3：配置`服务器1`
+
 SSH 到`服务器1`,编辑 /etc/mysql/my.cnf
 
     $ sudo nano /etc/mysql/my.cnf
 
 将下面的信息粘贴到文件末尾。
 
-用`服务器1`的地址替换192.0.2.1。
-将`192.0.2.2`和`192.0.2.3`分别替换为服务器`2和3`的地址。
-用步骤2中的UUID替换loose-group_replication_group_name的值。
+* 用`服务器1`的地址替换192.0.2.1。
+* 将`192.0.2.2`和`192.0.2.3`分别替换为服务器`2和3`的地址。
+* 用步骤2中的UUID替换loose-group_replication_group_name的值。
 
-    [mysqld]
-    server_id=1 
-    bind-address=0.0.0.0
-    gtid_mode=ON 
-    enforce_gtid_consistency=ON
-    binlog_checksum=NONE
+        [mysqld]
+        server_id=1
+        bind-address=0.0.0.0
+        gtid_mode=ON 
+        enforce_gtid_consistency=ON
+        binlog_checksum=NONE
 
-    plugin_load_add='group_replication.so'
-    group_replication_single_primary_mode=OFF
-    loose-group_replication_group_name="00000000-1111-2222-3333-444444444444"
-    loose-group_replication_start_on_boot=OFF
-    loose-group_replication_local_address= "192.0.2.1:33061"
-    loose-group_replication_group_seeds="192.0.2.1:33061, 192.0.2.2:33061, 192.0.2.3:33061"
-    loose-group_replication_bootstrap_group=OFF
-    report_host=192.0.2.1
+        plugin_load_add='group_replication.so'
+        group_replication_single_primary_mode=OFF
+        loose-group_replication_group_name="00000000-1111-2222-3333-444444444444"
+        loose-group_replication_start_on_boot=OFF
+        loose-group_replication_local_address= "192.0.2.1:33061"
+        loose-group_replication_group_seeds="192.0.2.1:33061, 192.0.2.2:33061, 192.0.2.3:33061"
+        loose-group_replication_bootstrap_group=OFF
+        report_host=192.0.2.1
 
 注：`loose-group_replication`前缀指示服务器启动，即使服务器启动时未加载组复制插件也是如此。
 
@@ -191,25 +192,25 @@ ssh链接到服务器2 ,编辑 `/etc/mysql/my.cnf`
 
 将下面的信息粘贴到文件末尾。
 
-用服务器2的地址替换为192.0.2.2
-将192.0.2.1和192.0.2.3分别替换为服务器 1 和 3 的地址。
-将loose-group_replication_group_name的值替换为步骤 2 中的 UUID。
+* 用服务器2的地址替换为192.0.2.2
+* 将192.0.2.1和192.0.2.3分别替换为服务器 1 和 3 的地址。
+* 将loose-group_replication_group_name的值替换为步骤 2 中的 UUID。
 
-    [mysqld]
-    server_id=2
-    bind-address=0.0.0.0
-    gtid_mode=ON 
-    enforce_gtid_consistency=ON
-    binlog_checksum=NONE
+        [mysqld]
+        server_id=2
+        bind-address=0.0.0.0
+        gtid_mode=ON 
+        enforce_gtid_consistency=ON
+        binlog_checksum=NONE
 
-    plugin_load_add='group_replication.so'
-    group_replication_single_primary_mode=OFF
-    loose-group_replication_group_name="00000000-1111-2222-3333-444444444444"
-    loose-group_replication_start_on_boot=OFF
-    loose-group_replication_local_address= "192.0.2.2:33061"
-    loose-group_replication_group_seeds="192.0.2.1:33061, 192.0.2.2:33061, 192.0.2.3:33061"
-    loose-group_replication_bootstrap_group=OFF
-    report_host=192.0.2.2
+        plugin_load_add='group_replication.so'
+        group_replication_single_primary_mode=OFF
+        loose-group_replication_group_name="00000000-1111-2222-3333-444444444444"
+        loose-group_replication_start_on_boot=OFF
+        loose-group_replication_local_address= "192.0.2.2:33061"
+        loose-group_replication_group_seeds="192.0.2.1:33061, 192.0.2.2:33061, 192.0.2.3:33061"
+        loose-group_replication_bootstrap_group=OFF
+        report_host=192.0.2.2
 
 保存并关闭文件。
 
@@ -272,25 +273,26 @@ SSH连接到服务器3,编辑`/etc/mysql/my.cnf`
 
 将下面的信息粘贴到文件末尾
 
-将`192.0.2.3`替换为`服务器 3 `的地址。
-将`192.0.2.1和192.0.2.2`分别替换为`服务器 1 和 2 `的地址。
-将`loose-group_replication_group_name`的值替换为步骤 2 中的 UUID。
+* 将`192.0.2.3`替换为`服务器 3 `的地址。
+* 将`192.0.2.1和192.0.2.2`分别替换为`服务器 1 和 2 `的地址。
+* 将`loose-group_replication_group_name`的值替换为步骤 2 中的 UUID。
 
-    [mysqld]
-    server_id=3
-    bind-address=0.0.0.0
-    gtid_mode=ON 
-    enforce_gtid_consistency=ON
-    binlog_checksum=NONE
 
-    plugin_load_add='group_replication.so'
-    group_replication_single_primary_mode=OFF
-    loose-group_replication_group_name="00000000-1111-2222-3333-444444444444"
-    loose-group_replication_start_on_boot=OFF
-    loose-group_replication_local_address= "192.0.2.3:33061"
-    loose-group_replication_group_seeds="192.0.2.1:33061, 192.0.2.2:33061, 192.0.2.3:33061"
-    loose-group_replication_bootstrap_group=OFF
-    report_host=192.0.2.3
+        [mysqld]
+        server_id=3
+        bind-address=0.0.0.0
+        gtid_mode=ON 
+        enforce_gtid_consistency=ON
+        binlog_checksum=NONE
+
+        plugin_load_add='group_replication.so'
+        group_replication_single_primary_mode=OFF
+        loose-group_replication_group_name="00000000-1111-2222-3333-444444444444"
+        loose-group_replication_start_on_boot=OFF
+        loose-group_replication_local_address= "192.0.2.3:33061"
+        loose-group_replication_group_seeds="192.0.2.1:33061, 192.0.2.2:33061, 192.0.2.3:33061"
+        loose-group_replication_bootstrap_group=OFF
+        report_host=192.0.2.3
 
 保存并关闭
 
