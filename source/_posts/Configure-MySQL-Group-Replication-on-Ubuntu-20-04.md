@@ -17,11 +17,11 @@ MySQL Group Replication是一个创建高可用性容错数据库架构的插件
 
 开始之前，请确保您具有以下内容：
 
-一组配置了私有网络的三个Ubuntu 20.04服务器。本指南使用示例私有IP地址192.0.2.1、192.0.2.2和192.0.2.3。
+* 一组配置了私有网络的三个Ubuntu 20.04服务器。本指南使用示例私有IP地址192.0.2.1、192.0.2.2和192.0.2.3。
 
-在每个服务器上具有sudo特权的非根用户。
+* 在每个服务器上具有sudo特权的非根用户。
 
-这三个服务器都是最新的升级版本。
+* 这三个服务器都是最新的升级版本。
 
  > 第 1 步：安装 MySQL 服务器
 
@@ -235,7 +235,8 @@ $ sudo mysql -u root -p
     mysql> START GROUP_REPLICATION;
 
 验证服务器 2 现在是组的成员。
-mysql> SELECT MEMBER_ID, MEMBER_HOST, MEMBER_STATE FROM performance_schema.replication_group_members;
+
+    mysql> SELECT MEMBER_ID, MEMBER_HOST, MEMBER_STATE FROM performance_schema.replication_group_members;
 
 验证您的输出与此类似。你的MEMBER_ID会有所不同。
 

@@ -128,3 +128,5 @@ keywords:
 
 > 如果shadowsocks 是RUNNING状态说明成功了
 
+注:个人vpn使用目前不被国家认可,`shadowsocks`的流量已经被识别,随时可能会`封你的服务器ip`,推荐使用 `v2ray` ,配置使用请在本博客中搜索
+
