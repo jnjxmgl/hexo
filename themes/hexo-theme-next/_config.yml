@@ -121,12 +121,12 @@ scheme: Gemini
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
-  home: / || home
-  about: /about/ || user
-  tags: /tags/ || tags
-  categories: /categories/ || th
-  archives: /archives/ || archive
-  schedule: /schedule/ || calendar
+  home: /index.html || home
+  about: /about/index.html || user
+  tags: /tags/index.html || tags
+  categories: /categories/index.html || th
+  archives: /archives/index.html || archive
+  schedule: /schedule/index.html || calendar
   sitemap: /baidusitemap.xml || sitemap
   # commonweal: /404/ || heartbeat
 
