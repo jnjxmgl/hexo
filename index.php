@@ -94,7 +94,15 @@ foreach ($urlArr as $key => $value) {
     $urlArr[$key] = str_replace('D:\hexo\public', 'https://imgl.net', $value);
 }
 
+#腾讯与刷新逻辑
 
+/*注意事项
+
+curl 会报证书错误,需要在php.ini里配置好如下配置
+
+curl.cainfo =D:\hexo\cacert.pem
+
+*/
 
 require_once "./vendor/autoload.php";
 
