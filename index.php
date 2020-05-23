@@ -115,7 +115,7 @@ use TencentCloud\Cdn\V20180606\Models\PurgeUrlsCacheRequest;
 
 try {
 
-    $cred = new Credential("AKIDc1PhneIo7MFrQtq5PUcXN7ey4walmYCg ", "WsjSxHsHH5pEOQ9e074A5yg9duz0Nfjz");
+    $cred = new Credential("AKIDc1PhneIo7MFrQtq5PUcXN7ey4walmYCg", "WsjSxHsHH5pEOQ9e074A5yg9duz0Nfjz");
     $httpProfile = new HttpProfile();
     $httpProfile->setEndpoint("cdn.tencentcloudapi.com");
 
