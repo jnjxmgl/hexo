@@ -1,5 +1,6 @@
 {
     "require": {
-        "tencentcloud/tencentcloud-sdk-php": "^3.0"
+        "tencentcloud/tencentcloud-sdk-php": "^3.0",
+        "qiniu/php-sdk": "^7.2"
     }
 }
