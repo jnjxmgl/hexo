@@ -105,24 +105,14 @@ $CdnManager = new CdnManager($auth);
 
 $sumArr = array_merge($urlArr, $wwwurlArr);
 
-$y = count($sumArr)  % 10;
-$s =  count($sumArr)  / 10;
-if ($y == 0) {
+foreach ($sumArr as $key => $value) {
 
-    for ($i = 0; $i < $s; $i++) {
-        $res = $CdnManager->refreshUrls(array_slice($sumArr, $i * 10, ($i + 1) * 10));
-        var_dump($res);
-        echo "等待2s\n";
-        sleep(2);
-    }
-} else {
+    $res = $CdnManager->refreshUrls([$value]);
 
-    for ($i = 0; $i < $s; $i++) {
-        $res = $CdnManager->refreshUrls(array_slice($sumArr, $i * 10, ($i + 1) * 10));
-        var_dump($res);
-        echo "等待2s\n";
-        sleep(2);
+    if ($res[0]['code'] != 200) {
+        echo "请求出错\n";
+        die;
     }
-    $res = $CdnManager->refreshUrls(array_slice($sumArr, $i * 10));
-    var_dump($res);
+    echo "等待2s\n";
+    sleep(1);
 }
