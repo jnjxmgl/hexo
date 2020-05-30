@@ -35,11 +35,3 @@ keywords:
 ```
 service sshd restart
 ```
-<div class="_jj9m6hxydxf"></div>
-<script type="text/javascript">
-    (window.slotbydup = window.slotbydup || []).push({
-        id: "u5993439",
-        container: "_jj9m6hxydxf",
-        async: true
-    });
-</script>

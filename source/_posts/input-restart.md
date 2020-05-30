@@ -20,12 +20,3 @@ keywords:
 > 解决办法
 
 打开'开始'->'运行'->'Ctfmon.exe'->回车即可.
-
-<div class="_9dhbe6qhpx"></div>
-<script type="text/javascript">
-    (window.slotbydup = window.slotbydup || []).push({
-        id: "u5993486",
-        container: "_9dhbe6qhpx",
-        async: true
-    });
-</script>
