@@ -8,7 +8,7 @@
   {{ partial('_third-party/analytics/index.swig', {}, {cache: theme.cache.enable}) }}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
   <script data-ad-client="ca-pub-8026288595457084" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66541524" charset="UTF-8"></script>
+  <script type="text/javascript" src="https://tajs.qq.com/stats?sId=66541524" charset="UTF-8"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">

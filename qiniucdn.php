@@ -113,6 +113,6 @@ foreach ($sumArr as $key => $value) {
         echo "请求出错\n";
         die;
     }
-    echo "等待2s\n";
+    echo "等待1s\n";
     sleep(1);
 }
