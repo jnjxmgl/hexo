@@ -1,8 +1,2 @@
-
-
-openssl dhparam -out pure-ftpd-dhparams.pem 2048
-
-openssl req -x509 -nodes -newkey rsa:2048 -sha256 -keyout \
-  pure-ftpd.pem \
-  -out pure-ftpd.pem
+openssl req -x509 -nodes -newkey rsa:2048 -sha256 -keyout pure-ftpd.pem -out pure-ftpd.pem
   
