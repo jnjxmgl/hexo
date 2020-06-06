@@ -1,4 +1,3 @@
-<!-- 
 <div class="_63khapqt3rf"></div>
 <script type="text/javascript">
     (window.slotbydup = window.slotbydup || []).push({
@@ -7,7 +6,6 @@
         async: true
     });
 </script>
--->
 {%- if theme.footer.beian.enable %}
   <div class="beian">
     {{- next_url('http://www.beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
