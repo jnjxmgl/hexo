@@ -1,17 +1,16 @@
 ---
-title: openssl生成自签名证书
+title: openssl生成pure-ftpd自签名证书
 date: 2020-06-08 11:52:56
 tags: 
 - openssl
 categories: 
 - linux
 keywords:
-- 更新Debian服务器
-- 更新Debian服务器软件包
+- openssl生成pure-ftpd自签名证书
 ---
 >第一步,在终端执行如下代码,前提是服务器或者本地主机已经安装openssl
 
-    openssl req -x509 -nodes -newkey rsa:2048 -sha256 -keyout pure-ftpd.pem -out
+    openssl req -x509 -nodes -newkey rsa:2048 -sha256 -keyout pure-ftpd.pem -out pure-ftpd.pem
 
 我这里希望给自己搭建的pure-ftpd创建一个证书,证书的名字是`pure-ftpd.pem`,这里面包含有证书和私钥两部分,再这同一个文件中,当然你也可以从里面摘取分开来保存,执行完成后会有如下提示:
 
