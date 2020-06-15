@@ -10,6 +10,6 @@ keywords:
 
 mysqldump -u [mysql用户] -p [数据库] $(mysql -u [mysql用户] -p [数据库] -Bse "show tables like '[前缀字符串]%'") > "[文件名].sql"
 
->示例>
+>示例
 
 mysqldump -u root -p enterprise $(mysql -u root -p enterprise -Bse "show tables like 'fa_%'") > "enterprise.sql"
