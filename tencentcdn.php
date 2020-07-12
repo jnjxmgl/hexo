@@ -83,15 +83,15 @@ class getFiles
 }
 
 
-$res = new getFiles('D:\hexo\public', true, true);
+$res = new getFiles('/var/www/html/', true, true);
 
 $wwwurlArr = $res->_files;
 $urlArr = $res->_files;
 foreach ($wwwurlArr as $key => $value) {
-    $wwwurlArr[$key] = str_replace('D:\hexo\public', 'https://www.imgl.net', $value);
+    $wwwurlArr[$key] = str_replace('/var/www/html/', 'https://www.imgl.net', $value);
 }
 foreach ($urlArr as $key => $value) {
-    $urlArr[$key] = str_replace('D:\hexo\public', 'https://imgl.net', $value);
+    $urlArr[$key] = str_replace('/var/www/html/', 'https://imgl.net', $value);
 }
 
 #腾讯与刷新逻辑
