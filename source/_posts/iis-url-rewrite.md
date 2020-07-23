@@ -43,7 +43,9 @@ keywords:
 
 既然选择了iis,说明你应该相对了解他的配置作用域,我们为了其它站点的url不至于也一起被重写,我们这里选择了特定的站点,然后单击右侧的`url 重写`,然后找到右上角的`导入规则`选项,如下图示:
 
-![搜索安装](https://res.imgl.net/hexo/iis-url-rewrite/a4c3f2eaa3409caf589e8d5932920e3.png "搜索安装")
+![导入规则](https://res.imgl.net/hexo/iis-url-rewrite/2020-07-23_142651.png "导入规则")
+
+![应用导入](https://res.imgl.net/hexo/iis-url-rewrite/a4c3f2eaa3409caf589e8d5932920e3.png "应用导入")
 
 我这里使用的是tp框架,我们可以按照上图所示的方法将apache的url重写规则文件通过图中的`导入`按钮,直接转化为iis可已识别的url从写,然后不要忘记点击图右上角的`应用`
 
